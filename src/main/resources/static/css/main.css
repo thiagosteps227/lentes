@@ -1,27 +1,40 @@
-
 body {
 	height: 100%;
 	width: 100%;
-	font-family: "the farmer textured rounded";
-	color: rgb(13,26,44);
-	background-image: url("/images/LogoOFICIAL.png");
+	font-family: 'Sarpanch', sans-serif;
+	color:white;
+	background-image: url("/images/LogoAmarelo.PNG");
 	background-repeat: no-repeat;
 	background-position: top;
+	background-color: rgb(13,26,44);
 }
 
 #logo {
 	height: 30%;
 	width: 100%;
-	background-image: url("/images/LogoOFICIAL.jpg");
+	display:flex;
+	margin: auto;
 }
+
+#logo img{
+	height: 150px;
+	width: 150px;
+}
+
+#logo a{
+	display:flex;
+}
+
 .btn {
 	color: rgb(13,26,44);
 	margin-left: 10px;
 }
 
 header h1{
-	color: black;
-	flex: auto;
+	color: white;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 section {
@@ -29,17 +42,13 @@ section {
 	width: 100%;
 }
 
-#albums {
-	width: 100%;
-	margin: 0 auto; 
-	padding: 20px;
-	border: 3px solid black;
-	box-shadow: 0 9px 18px 9px;
+.nav {
+	margin-bottom: 20px;
+	border-bottom: 1px solid rgb(248, 220, 175);
 }
 
 i {
-	font-size: 25px;
-	color: rgb(248,220,175);
+	color: white;
 	margin: 5px;
 }
 
@@ -59,6 +68,7 @@ i {
 ul {
 	flex-direction: row;
 	justify-content: center;
+	
 }
 
 li { 
@@ -67,49 +77,39 @@ li {
 }
 
 a {
-	color: rgb(108, 99, 98);
+	text-decoration: none;
+	color:white;
+	font-size: 20px;
+}
+
+a:hover{
+	text-decoration: none;
+	color: rgb(248, 220, 175);
+	font-size: 21px;
 }
 	
 input{
-  border:1px solid #ccc;
-  min-height:30px;
-  outline: none;
+  border:2px solid rgb(248, 220, 175);
+  min-height:15px;
 }
 
-.mainArea input {
-  margin-bottom:15px;
-  margin-top:5px;
-  width:280px;
+.container img{
+	height: 256px;
+	width: 256px;
+	display: block;
+	
 }
 
-#editTableForm span{
-	color:red;
-}
-
-#updateSaintBtn{
-	margin: 5px;
-}
-
-.form-control {
-	overflow-wrap: break-word
-}
-#description{
-	height: 200px;
-}
-
-label {
-	display:block;
-}
-
-.nav{
-	margin:20px;
+.col {
+	margin: 2px;
 }
 
 footer{
 	height:10%;
 	width: 100%;
 	padding: 15px;
-	font-size:90%;
+	margin-top: 20px;
+	border-top: 1px solid rgb(248, 220, 175);
 	text-align: center;
-	color: #008000;
+	color:white;
 }
