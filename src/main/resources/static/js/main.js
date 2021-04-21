@@ -1,5 +1,5 @@
 // The root URL for the RESTful services
-var rootURL = "http://localhost:8080/WineCellar/rest/wines";
+/**var rootURL = "http://localhost:8080/WineCellar/rest/wines";
 
 
 var findAll= function () {
@@ -32,15 +32,21 @@ var openModal = function(){
 	$('#year').val("2021");
 	$('#myModal').modal('show');
 }
+*/
 
-//Retrieve the wine list when the DOM is ready
 $(document).ready(function(){
-	$(document).on("click", '#modalBtn', function(){openModal();});
-	findAll();
+	$('.col a[href="#img"]').click(function(e){
+		e.preventDefault();
+		$('#myModal').show();
+		var id = event.target.id;
+		$('.modal-content').remove();
+		  $("#myModal").append("<img id='"+this.id+"' class='modal-content' src='images/LogoAmarelo.PNG.jpg'/>");
+		  //captionText.innerHTML = this.alt;
+		});
 	
-       // $('#tab a').click(function (e) {
-       //     e.preventDefault();
-        //    $(this).tab('show');
-       // });
+	$('#span').click( function(e) {
+		e.preventDefault();
+		$('#myModal').hide();
+	})
 });
 
