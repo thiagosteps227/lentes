@@ -9,14 +9,13 @@ integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwr
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Sarpanch:wght@800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/main.css"/>
-
 <script src="/js/jquery-3.6.0.js"></script>
 <script src="/js/main.js"></script>
 </head>
 <body>
 <header id="header">
 <!-- Nav tabs -->
-	<div id="logo"><a href="#home role="tab" data-toggle="tab"><img src="images/Branco.PNG"><h1>Lentes por Rodrigo Leal</h1></a></div>
+	<div id="logo"><a href="#home" role="tab" data-toggle="tab"><img src="images/Branco.PNG"></a><h1>Lentes por Rodrigo Leal</h1></div>
     <ul id="navbar" class="nav nav-tabs" role="tablist">
         <li class="active"><a href="#home" role="tab" data-toggle="tab"><i class="bi bi-house"></i></a></li>
         <li><a href="#albums" role="tab" data-toggle="tab"><i class="bi bi-archive"></i>FOTOGRAFIA</a></li>
@@ -29,32 +28,35 @@ integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwr
 </header>
 <section>
 <div class="tab-pane active" id="home">
-            <h1>Trabalhos</h1>
+            <h1>Trabalhos</h1><!-- row-cols-auto -->
             <div class="container" id="grids">
-				<div class="row row-cols-auto" id="home">
-				    <div class="col"><img src="images/LogoAmarelo.PNG.jpg"></div>
-    				<div class="col"><img src="images/LogoOFICIAL.jpg"></div>
-    				<div class="col"><img src="images/LogoOFICIAL.png"></div>
-    				<div class="col"><img src="images/logoOFICIAL.jpeg"></div>
-    				<div class="col"><img src="images/LogoAmarelo.PNG.jpg"></div>
-    				<div class="col"><img src="images/LogoOFICIAL.jpg"></div>
-    				<div class="col"><img src="images/LogoOFICIAL.png"></div>
-    				<div class="col"><img src="images/logoOFICIAL.jpeg"></div>
-    				<div class="col"><img src="images/LogoAmarelo.PNG.jpg"></div>
-    				<div class="col"><img src="images/LogoOFICIAL.jpg"></div>
-    				<div class="col"><img src="images/LogoOFICIAL.png"></div>
-    				<div class="col"><img src="images/logoOFICIAL.jpeg"></div>
-    				<div class="col"><img src="images/LogoAmarelo.PNG.jpg"></div>
-    				<div class="col"><img src="images/LogoOFICIAL.jpg"></div>
-    				<div class="col"><img src="images/LogoOFICIAL.png"></div>
-    				<div class="col"><img src="images/logoOFICIAL.jpeg"></div>
-    				
+				<div class="row row-cols-auto " id="home">
+				    <div class="col"><a href="#img"><img id="myImg" src="images/LogoAmarelo.PNG.jpg" alt="logo amarelo"></a></div>
+    				<div class="col"><a href="#img"><img id="myImg" src="images/LogoOFICIAL.jpg"></a></div>
+    				<div class="col"><a href="#img"><img id="myImg" src="images/LogoOFICIAL.png"></a></div>
+    				<div class="col"><a href="#img"><img id="myImg" src="images/logoOFICIAL.jpeg"></a></div>
+    				<div class="col"><a href="#img"><img id="myImg" src="images/LogoAmarelo.PNG.jpg"></a></div>
+    				<div class="col"><a href="#img"><img id="myImg" src="images/LogoOFICIAL.jpg"></a></div>
+    				<div class="col"><a href="#img"><img id="myImg" src="images/LogoOFICIAL.png"></a></div>
+    				<div class="col"><a href="#img"><img id="myImg" src="images/logoOFICIAL.jpeg"></a></div>
+    				<div class="col"><a href="#img"><img id="myImg" src="images/LogoAmarelo.PNG.jpg" alt="logo amarelo"></a></div>
 				</div>
-			</div>
-      </div>
+		</div>
+</div>
 </section>
 <footer>
 &copy; Lentes por Rodrigo Leal
 </footer>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span id="span" class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
 </body>
 </html>
