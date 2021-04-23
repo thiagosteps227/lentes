@@ -84,7 +84,7 @@ ul {
 }
 
 li { 
-	padding-right:20px;
+	padding-right:15px;
 	font-size:150%;
 }
 
@@ -104,6 +104,9 @@ input{
   min-height:15px;
 }
 
+.container {
+	margin-top: 15px;
+}
 .container img{
 	height: 300px;
 	width: 300px;
@@ -117,6 +120,13 @@ input{
 
 .col {
 	margin: 1px;
+}
+
+.dados {
+    bottom: 5px;
+    right: 0;
+    color:rgb(13,26,44);
+    margin-right: 2px;
 }
 
 /* Style the Image Used to Trigger the Modal */
