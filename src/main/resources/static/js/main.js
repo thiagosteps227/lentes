@@ -1,7 +1,6 @@
 // The root URL for the RESTful services
 /**var rootURL = "http://localhost:8080/WineCellar/rest/wines";
 
-
 var findAll= function () {
 	console.log('findAll');
 	$.ajax({
@@ -11,7 +10,6 @@ var findAll= function () {
 		success: renderList
 	});
 };
-
 
 var renderList = function (list) {
 	//list=data.wine;
@@ -35,6 +33,7 @@ var openModal = function(){
 */
 
 $(document).ready(function(){
+	$('#trabalhosGrid').hide();
 	$('.col a[href="#img"]').click(function(e){
 		e.preventDefault();
 		$('#myModal').show();
@@ -48,5 +47,19 @@ $(document).ready(function(){
 		e.preventDefault();
 		$('#myModal').hide();
 	})
+	
+		  //mostrar os albuns
+    $('.nav-tabs a[href="#home"]').click(function (e) {
+         e.preventDefault();
+         $('#home').show();
+         $('#trabalhosGrid').hide();
+     });
+	
+	  //mostrar os albuns
+    $('.nav-tabs a[href="#trabalhosGrid"]').click(function (e) {
+         e.preventDefault();
+         $('#home').hide();
+         $('#trabalhosGrid').show();
+     });
 });
 
