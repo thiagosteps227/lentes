@@ -34,7 +34,7 @@ var openModal = function(){
 
 $(document).ready(function(){
 	$('#trabalhosGrid').hide();
-	$('.col a[href="#img"]').click(function(e){
+	$('.my-2 a[href="#img"]').click(function(e){
 		e.preventDefault();
 		$('#myModal').show();
 		var id = event.target.id;
@@ -48,12 +48,19 @@ $(document).ready(function(){
 		$('#myModal').hide();
 	})
 	
-		  //mostrar os albuns
+	//mostrar os albuns
     $('.nav-tabs a[href="#home"]').click(function (e) {
          e.preventDefault();
          $('#home').show();
          $('#trabalhosGrid').hide();
      });
+	
+	// mostra home quando clicar no logo
+	$('#logo a[href="#homePage"]').click(function (e) {
+        e.preventDefault();
+        $('#home').show();
+        $('#trabalhosGrid').hide();
+    });
 	
 	  //mostrar os albuns
     $('.nav-tabs a[href="#trabalhosGrid"]').click(function (e) {
